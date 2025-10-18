@@ -1,0 +1,30 @@
+{
+  "id": "natrij",
+  "name": "Natrij",
+  "description": "After an unsuccessful attempt at claiming power peacefully, Borko has decided to tear down Mirko’s village hall, which was built for him out of cardboard by his loyal servants.\n\nFor this he will use Mirko’s microprocessor (which was stolen from him by Borko’s friend Zvonko), a bucket of water and a bag of sodium. He will enter the time of the “explosion” into the microprocessor, and it will drop the sodium in the water after the time is up.\n\nBorko knows the current time and when he wants the explosion. He is not very fond of arithmetic and Zvonko is currently playing with marbles in his back yard so he can’t help him.\n\nWrite a program that calculates the time to the explosion (this is the time Borko will enter into the microprocessor). The time Borko wants is at least one second and at most 24 hours.",
+  "input": "The first line of input contains the current time in hh:mm:ss format (hours, minutes, seconds). The hours will be between $0$ and $23$ (inclusive) and the minutes and seconds between $0$ and $59$. The second line contains the time of the explosion in the same format.",
+  "output": "Output the desired time on a single line in the hh:mm:ss format.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "20:00:00\n04:00:00",
+      "output": "08:00:00"
+    },
+    {
+      "input": "12:34:56\n14:36:22",
+      "output": "02:01:26"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 3.1,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

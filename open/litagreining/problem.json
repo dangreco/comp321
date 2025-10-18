@@ -1,0 +1,45 @@
+{
+  "id": "litagreining",
+  "name": "Colour Analysis",
+  "description": "Jón and Gunna argue sometimes about what colour a particular thing is. Is the wall green or a yellowish green, is the dress blue or gold and so on. To solve this problem they have obtained a measuring device that measures the reflecting light in red, green and blue and outputs three numbers. This has however not solved the problem because now they simply disagree on which values correspond to which colour. Thus they now need a program which takes care of this issue.\n\nAll three values are integers from $0$ to $255$ and we denote them by $R$, $G$ and $B$. If $R$ is strictly greater than the other values the answer is raudur. If $G$ is strictly greater than the other values the answer is graenn. If $B$ is strictly greaser than the other values the answer is blar. If $R = G$ and $B$ is strictly smaller than the other values the answer is gulur. If $R = B$ and $G$ is strictly smaller than the other values the answer is fjolubleikur. If $G = B$ and $R$ is strictly smaller than the other values the answer is blagraenn. If all values are equal to $0$ the answer is svartur. If all values are equal to $255$ the answer is hvitur. If all values are equal, but not equal to $0$ nor $255$, the answer is grar. Otherwise if none of the above applies the answer is othekkt.",
+  "input": "The input consists of a single line with three integers $R$, $G$ and $B$ which are separated by spaces. It will hold that $0 \\leq R, G, B \\leq 255$.",
+  "output": "Output the colour that the values correspond to, as described above.",
+  "bounds": [],
+  "scoring": [
+    {
+      "group": 1,
+      "points": 50,
+      "constraints": "$R, G$ and $B$ are different."
+    },
+    {
+      "group": 2,
+      "points": 50,
+      "constraints": "No further constraints."
+    }
+  ],
+  "samples": [
+    {
+      "input": "200 20 25",
+      "output": "raudur"
+    },
+    {
+      "input": "78 78 78",
+      "output": "grar"
+    },
+    {
+      "input": "30 170 170",
+      "output": "blagraenn"
+    }
+  ],
+  "metadata": {
+    "languages": ["en", "is"],
+    "difficulty": [1.3, 1.7],
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

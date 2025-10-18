@@ -1,0 +1,46 @@
+{
+  "id": "delimitersoup",
+  "name": "Delimiter Soup",
+  "description": "Whenever a programmer starts to learn a Lisp, they think that there are too many parentheses in it. Sophia thinks there are too few, so she is making a programming language with only parentheses. To spice it up a bit, she is also adding square brackets (‘[]’) and curly braces (‘{}’) to the language.\n\nRight now, she is struggling to make people use it for production code. Obviously, it has to be because of the bad error messages you get when you mess up the delimiters! Right now, you only get the error message ‘syntax error’ when you mess them up.\n\nAny opening delimiter must be closed by the same type of delimiter: ‘(’ is closed with ‘)’, ‘[’ is closed by ‘]’, etc.\n\nSophia wants to improve the error message so that you at least get some help finding out where it all went wrong.",
+  "input": "The input consists of two lines. The first line contains an integer $|L|$, the length of the next line. The next line contains $L$, the program you want to validate.",
+  "output": "Output the character and the $0$-indexed location of the first closing delimiter that does not match with the opening delimiter.\n\nIf there are no errors, or there are more opening delimiters than closing delimiters, print ‘ok so far’ instead.",
+  "bounds": [
+    "$1 \\leq |L| \\leq 200$",
+    "$L$ contains only the characters ‘()[]{}’ and spaces",
+    "$L$ does not start with a space character"
+  ],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "8\n([] [] ]",
+      "output": "] 7"
+    },
+    {
+      "input": "13\n(([] [[]] ())",
+      "output": "ok so far"
+    },
+    {
+      "input": "21\n[ { { () () () () } ]",
+      "output": "] 20"
+    },
+    {
+      "input": "27\n[ { [[()]] (({})) } ] () {}",
+      "output": "ok so far"
+    },
+    {
+      "input": "19\n[[]] () ) [] {{}} {",
+      "output": ") 8"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 1.7,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

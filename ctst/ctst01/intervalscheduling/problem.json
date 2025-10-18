@@ -1,0 +1,30 @@
+{
+  "id": "intervalscheduling",
+  "name": "Interval Scheduling",
+  "description": "Consider a set of $n$ intervals $I_1,\\ldots, I_ n$, each given as an integer tuple $(s_ i, f_ i)$ with $s_ i&lt;f_ i$, such that the $i$th interval starts at $s_ i$ and ends at $f_ i$. We want to determine the maximum number of nonoverlapping intervals. More formally, we want to determine the size of a largest subset $S\\subseteq \\{1,\\ldots,n\\} $ such that for $i, j\\in S$ with $i\\neq j$ we have $f_ j \\leq s_ i$ or $f_ i\\leq s_ j$. Note that the intervals $[1,2]$ and $[2,3]$ are not considered to be overlapping.",
+  "input": "The first line of input consists of an integer $n\\in \\{1,\\ldots, 10^5\\} $, the number of intervals. Each of the following $n$ lines consists of two space-separated integers $s$ and $f$, indicating an interval starting at $s$ and ending at $f$, with $0\\leq s&lt;f\\leq 10^9$.",
+  "output": "Output a single integer, the largest number of nonoverlapping intervals.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "3\n1 4\n2 8\n5 9",
+      "output": "2"
+    },
+    {
+      "input": "8\n0 6\n1 4\n3 5\n3 8\n4 7\n5 9\n6 10\n8 11",
+      "output": "3"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 1.7,
+    "limits": {
+      "cpu": {
+        "secs": 4,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}
