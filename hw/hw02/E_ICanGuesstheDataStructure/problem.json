@@ -1,0 +1,26 @@
+{
+  "id": "guessthedatastructure",
+  "name": "I Can Guess the Data Structure!",
+  "description": "There is a bag-like data structure, supporting two operations:\n\n$1\\ x$: Throw an element $x$ into the bag.\n\n$2$: Take out an element from the bag.\n\nGiven a sequence of operations with return values, you’re going to guess the data structure. It is a stack (Last-In, First-Out), a queue (First-In, First-Out), a priority-queue (Always take out larger elements first) or something else that you can hardly imagine!",
+  "input": "There are several test cases. Each test case begins with a line containing a single integer $n$ ($1\\leq n\\leq 1000$). Each of the next $n$ lines is either a type-1 command, or an integer $2$ followed by an integer $x$. This means that executing the type-2 command returned the element $x$. The value of $x$ is always a positive integer not larger than $100$. The input is terminated by end-of-file (EOF). The size of input file does not exceed 1MB.",
+  "output": "For each test case, output one of the following:\n\nstack It’s definitely a stack.\n\nqueue It’s definitely a queue.\n\npriority queue It’s definitely a priority queue.\n\nimpossible It can’t be a stack, a queue or a priority queue.\n\nnot sure It can be more than one of the three data structures mentioned above.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "6\n1 1\n1 2\n1 3\n2 1\n2 2\n2 3\n6\n1 1\n1 2\n1 3\n2 3\n2 2\n2 1\n2\n1 1\n2 2\n4\n1 2\n1 1\n2 1\n2 2\n7\n1 2\n1 5\n1 1\n1 3\n2 5\n1 4\n2 4\n1\n2 1",
+      "output": "queue\nnot sure\nimpossible\nstack\npriority queue\nimpossible"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 2.1,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

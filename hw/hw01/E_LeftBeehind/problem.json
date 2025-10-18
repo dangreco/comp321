@@ -1,0 +1,29 @@
+{
+  "id": "leftbeehind",
+  "name": "Left Beehind",
+  "description": "If Bill has more jars of sour honey than sweet, he will be left “beehind”. If Bill has more jars of sweet honey than sour he will go to the convention. If Bill has the same number of sweet and sour jars, his friends are undecided. Lastly, Bill’s friends are superstitious, if he has exactly 13 jars they will never speak to him again. Bill needs new friends.",
+  "input": "Input consists of multiple cases, each on its own line. Each case consists of two integers $x$ and $y$ ($0 \\le x, y \\le 1000$), which are the number of sweet and sour jars Bill has, respectively. Input is terminated by a line containing two zeros, which should not be processed. There may be up to $15$ test cases in the input.",
+  "output": "For each case, output one of the following results on its own line (without quotes).\n\nIf Bill’s friends will never speak to him again, that is most important and should be the only output.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "17 3\n13 14\n8 5\n44 44\n0 0",
+      "output": "To the convention.\nLeft beehind.\nNever speak again.\nUndecided."
+    }
+  ],
+  "metadata": {
+    "languages": [
+      "en",
+      "ja"
+    ],
+    "difficulty": 1.5,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

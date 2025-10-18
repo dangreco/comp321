@@ -1,0 +1,30 @@
+{
+  "id": "orders",
+  "name": "Restaurant Orders",
+  "description": "A friend of yours who is working as a waiter has a problem. A group of xkcd-fans have started to come to the restaurant and order food as in the comic strip below. Each order takes him a lot of time to figure out, but maybe you can help him.",
+  "input": "You are to write a program that finds out what was ordered given the total cost of the order and the cost of each item on the menu.",
+  "output": "The input starts with a line containing one integer $n$ ($1\\leq n\\leq 100$), the number of items on the menu. The next line contains $n$ space-separated positive integers $c_1, c_2, \\dots, c_ n$, denoting the cost of each item on the menu in Swedish kronor. No item costs more than $1\\, 000$ SEK.\n\nThis is followed by a line containing $m$ ($1\\leq m\\leq 1\\, 000$), the number of orders placed, and a line with $m$ orders. Each order is given as an integer $s$ ($1\\leq s\\leq 30\\, 000$), the total cost of all ordered items in SEK.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "3\n4 5 8\n3\n11 13 14",
+      "output": "Impossible\nAmbiguous\n1 2 2"
+    },
+    {
+      "input": "6\n215 275 335 355 420 580\n1\n1505",
+      "output": "Ambiguous"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 4.1,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

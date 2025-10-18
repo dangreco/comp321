@@ -1,0 +1,30 @@
+{
+  "id": "walls",
+  "name": "Lifting Walls",
+  "description": "The local building firm needs your help. They are building an apartment building where the walls are prefabricated and lifted in place using cranes. The building firm has located $n$ possible locations for cranes, and needs to choose some of these so that the center of each wall can be reached by at least one crane. The cranes are quite expensive, so they want to use as few of them as possible. A crane can reach a wall if the wall’s center is at most a distance $r$ away.\n\nThe house that is to be built is rectangular with a length $\\ell $ and width $w$.",
+  "input": "Find the minimum number of cranes required to reach the center of all four walls.",
+  "output": "The first line of input contains four space-separated positive integers $\\ell $, $w$, $n$ and $r$, all at most 30. $\\ell $ and $w$ denote the length and width of the house, $n$ denotes the number of possible crane locations, and $r$ denotes the reaching distance of each crane.\n\nThis is followed by $n$ lines, each containing two integers $x$ and $y$ ($-100\\leq x,y\\leq 100$), denoting a possible location for a crane. The coordinate system has its origin in the center of the building and the $x$-coordinate along the length of the house. The walls thus have their centers at $(x,y)=(-\\ell /2,0),(\\ell /2,0),(0,-w/2),(0,w/2)$.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "4 2 3 3\n1 -2\n4 0\n-1 2",
+      "output": "2"
+    },
+    {
+      "input": "6 1 1 1\n1 0",
+      "output": "Impossible"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 4.2,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

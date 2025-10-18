@@ -79,6 +79,7 @@
               nixd
               nixfmt
               just
+              act
 
               # haskell
               ghcSet.ghc

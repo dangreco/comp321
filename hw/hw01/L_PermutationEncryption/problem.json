@@ -1,0 +1,26 @@
+{
+  "id": "permutationencryption",
+  "name": "Permutation Encryption",
+  "description": "Working for the Texas Spy Agency, you are in charge of writing software for handling secure communications between your clients who wish to pass you messages without anyone else being able to read them. Therefore, you have been commissioned to write a program which takes messages and encrypts them according to a key that you have. The spy agency is not very technologically advanced, and everything has been done by hand until now, which is why you were hired. Thus, their codes are also fairly simple – they’re just character permutations.\n\nA permutation of length $n$, as you know, is a list of the numbers 1 through $n$ but in some rearranged order. So “1 2 3” is a permutation of length 3, and so is “2 1 3”, but “5 3 6 4 1 2” is a permutation of length 6. Notice that every number between 1 and $n$ appears in the permutation.\n\nA key is a permutation which is used to change the message. For instance, the key “1 2 3 4 5” is a permutation of length 5 which does absolutely nothing – an encrypted message and a decrypted message would be identical. The key “2 1” would reverse every two characters. So the phrase ‘I like ice cream’ would be encrypted as ‘Iileki ecc erma’. The key “5 1 4 2 3” would encrypt the word ‘howdy’ as ‘yhdow’.\n\nAs you might imagine, if the message is longer than the key, just keep applying the key to each set of $n$ characters. One last example. If the key is “4 1 3 5 2 6”, then $n$ is 6, and we would encrypt the message “Four score and seven years ago” as (spaces, vertical bars, and single quotes are added for clarity):",
+  "input": "The input to your program is a list of up to 150 messages to encrypt. Each message has two lines (one for the key, one for the message content). The first line starts with an integer $1 \\leq n \\leq 20$, the length of the key, followed by $n$ integers which form the permutation. The second line contains the message content. Your program should encrypt everything on the second line, spaces and all. Input ends when $n$ is zero.",
+  "output": "For each message, pad the input with spaces as necessary, encrypt the message with the key, and output the encrypted message. Include single quotes around the encrypted message.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "1 1\nFour score and seven years ago\n2 2 1\nour fathers brough forth on this continent a new nation,\n5 1 3 2 5 4\nconceived in liberty and dedicated to the proposition\n10 5 10 8 1 3 6 4 7 2 9\nthat all men are created equal.\n0",
+      "output": "'Four score and seven years ago'\n'uo rafhtre srbuohgf rohto  nhtsic noitentna n wen taoi,n'\n'cnoeciev di nilbreyt na dddeciaet dt ohtep orpsotiino  '\n' mltaatlh rece ea nr luaeedqta   .      '"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 2.1,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

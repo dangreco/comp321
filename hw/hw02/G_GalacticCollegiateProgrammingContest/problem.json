@@ -1,0 +1,26 @@
+{
+  "id": "gcpc",
+  "name": "Galactic Collegiate Programming Contest",
+  "description": "This year there are $n$ teams in the contest. The teams are numbered $1,2,\\ldots,n$, and your favorite team has number $1$.\n\nLike today, the score of a team is a pair of integers $(a,b)$ where $a$ is the number of solved problems and $b$ is the total penalty of that team. When a team solves a problem there is some associated penalty (not necessarily calculated in the same way as in the NCPC – the precise details are not important in this problem). The total penalty of a team is the sum of the penalties for the solved problems of the team.\n\nConsider two teams $t_1$ and $t_2$ whose scores are $(a_1,b_1)$ and $(a_2,b_2)$. The score of team $t_1$ is better than that of $t_2$ if either $a_1&gt;a_2$, or if $a_1=a_2$ and $b_1&lt;b_2$. The rank of a team is $k+1$ where $k$ is the number of teams whose score is better.\n\nYou would like to follow the performance of your favorite team. Unfortunately, the organizers of GCPC do not provide a scoreboard. Instead, they send a message immediately whenever a team solves a problem.",
+  "input": "The first line of input contains two integers $n$ and $m$, where $1 \\le n \\le 10^5$ is the number of teams, and $1 \\le m \\le 10^5$ is the number of events.\n\nThen follow $m$ lines that describe the events. Each line contains two integers $t$ and $p$ ($1 \\le t \\le n$ and $1 \\le p \\le 1000$), meaning that team $t$ has solved a problem with penalty $p$. The events are ordered by the time when they happen.",
+  "output": "Output $m$ lines. On the $i$’th line, output the rank of your favorite team after the first $i$ events have happened.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "3 4\n2 7\n3 5\n1 6\n1 9",
+      "output": "2\n3\n2\n1"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 5.2,
+    "limits": {
+      "cpu": {
+        "secs": 2,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

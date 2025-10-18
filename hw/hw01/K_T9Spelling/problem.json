@@ -1,0 +1,26 @@
+{
+  "id": "t9spelling",
+  "name": "T9 Spelling",
+  "description": "The Latin alphabet contains 26 characters and telephones only have ten digits on the keypad. We would like to make it easier to write a message to your friend using a sequence of keypresses to indicate the desired characters. The letters are mapped onto the digits as shown below. To insert the character ‘B’ for instance, the program would press “22”. In order to insert two characters in sequence from the same key, the user must pause before pressing the key a second time. The space character ‘’ should be printed to indicate a pause. For example, “2 2” indicates “AA” whereas “22” indicates “B”.\n\nThe first line of input gives the number of cases, $N, 1 \\leq N \\leq 100$. $N$ test cases follow. Each case is a line of text containing the desired message, which will be at most $1000$ characters long. Each message will consist of only lowercase characters ‘a’–‘z’ and space characters ‘’. Pressing zero emits a space.\n\nFor each test case, output one line containing “Case #$x$:” followed by the message translated into the sequence of key presses.",
+  "input": "",
+  "output": "",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "4\nhi\nyes\nfoo  bar\nhello world",
+      "output": "Case #1: 44 444\nCase #2: 999337777\nCase #3: 333666 6660 022 2777\nCase #4: 4433555 555666096667775553"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 1.6,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "minimumscalar",
+  "name": "Minimum Scalar Product",
+  "description": "You are given two vectors $v_1=(x_1,x_2,\\ldots,x_ n)$ and $v_2=(y_1,y_2,\\ldots,y_ n)$. The scalar product of these vectors is a single number, calculated as $x_1y_1+x_2y_2+\\ldots +x_ ny_ n$.\n\nSuppose you are allowed to permute the coordinates of each vector as you wish. Choose two permutations such that the scalar product of your two new vectors is the smallest possible, and output that minimum scalar product.",
+  "input": "The first line of the input file contains the number of testcases, $T\\leq 10$. For each test case, the first line contains integer number $n$. The next two lines contain $n$ integers each, giving the coordinates of $v_1$ and $v_2$ respectively.\n\nYou may assume that $1\\leq n\\leq 800$ and $-100\\, 000 \\leq x_ i, y_ i\\leq 100\\, 000$.",
+  "output": "For each test case, output a line\n\nwhere $X$ is the test case number, starting from 1, and $Y$ is the minimum scalar product of all permutations of the two given vectors.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "2\n3\n1 3 -5\n-2 4 1\n5\n1 2 3 4 5\n1 0 1 0 1",
+      "output": "Case #1: -25\nCase #2: 6"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 1.6,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "bachetsgame",
+  "name": "Bachet&#039;s Game",
+  "description": "",
+  "input": "The input consists of a number of lines (between $1$ and $100$, inclusive). Each line describes one game by a sequence of positive numbers. The first number is $n \\leq 1\\, 000\\, 000$ the number of stones on the table; the second number is $m \\leq 10$ giving the number of numbers that follow; the last $m$ numbers on the line specify how many stones can be removed from the table in a single move.",
+  "output": "For each line of input, output one line saying either Stan wins or Ollie wins assuming that both of them play perfectly.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "20 3 1 3 8\n21 3 1 3 8\n22 3 1 3 8\n23 3 1 3 8\n1000000 10 1 23 38 11 7 5 4 8 3 13\n999996 10 1 23 38 11 7 5 4 8 3 13",
+      "output": "Stan wins\nStan wins\nOllie wins\nStan wins\nStan wins\nOllie wins"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 5.0,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

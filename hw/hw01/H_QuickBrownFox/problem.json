@@ -1,0 +1,26 @@
+{
+  "id": "quickbrownfox",
+  "name": "Quick Brown Fox",
+  "description": "A pangram is a phrase that includes at least one occurrence of each of the $26$ letters, ‘a’$\\ldots $‘z’. You’re probably familiar with this one: “The quick brown fox jumps over the lazy dog.”\n\nYour job is to recognize pangrams. For phrases that don’t contain every letter, report what letters are missing. We’ll say that a particular letter occurs in the phrase if it occurs as either upper case or lower case.",
+  "input": "Input starts with a line containing an integer $1 \\le N \\le 50$. The next $N$ lines are each a single phrase, possibly containing upper and lower case letters, spaces, decimal digits and punctuation characters ‘.’, ‘,’, ‘?’, ‘!’, ‘’’ and ‘\"’. Each phrase contains at least one and no more than 100 characters.",
+  "output": "For each input phrase, output “pangram” if it qualifies as a pangram. Otherwise, output the word “missing” followed by a space and then the list of letters that didn’t occur in the phrase. The list of missing letters should be reported in lower case and should be sorted alphabetically.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "3\nThe quick brown fox jumps over the lazy dog.\nZYXW, vu TSR Ponm lkj ihgfd CBA.\n.,?!'\" 92384 abcde FGHIJ",
+      "output": "pangram\nmissing eq\nmissing klmnopqrstuvwxyz"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 1.5,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

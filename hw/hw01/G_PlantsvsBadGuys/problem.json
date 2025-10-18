@@ -1,0 +1,40 @@
+{
+  "id": "pvbg",
+  "name": "Plants vs Bad Guys",
+  "description": "Oh no! There are a bunch of bad guys creeping around on Mikael’s lawn, and they all want to attack Mikael! Luckily, Mikael has planted several peashooters on his lawn that can protect him from the bad guys.\n\nMikael’s lawn consists of $N$ rows, where Mikael has planted $R_ i$ peashooters on row $i$. The peashooters only protect the row of the lawn where the peashooter is located, and each peashooter can protect the row from $1$ bad guy every wave. The bad guys come in waves. During the first wave, there will be $1$ bad guy on each row, during the second wave there will be $2$ bad guys on each row, and at wave number $t$, there will be $t$ bad guys on each row. Mikael will be attacked during a wave if the peashooters fail to protect any row from the naughty boys! In other words, if there is any row where there are more bad guys than there are peashooters, the bad guys will successfully reach Mikael (and maybe even eat him!!!).\n\nHow many waves of bad guys can Mikael’s peashooters protect him, before the bad guys manage to reach Mikael?",
+  "input": "The first line consists of an integer $(1 \\leqslant N \\leqslant 10^6)$, the number of rows on Mikael’s lawn. The second line consists of $N$ integers, where each integer $(1 \\leqslant R_ i \\leqslant 10^9)$ represents the number of peashooters located at row $i$.",
+  "output": "Print an integer $t$ - the first wave that will successfully breach the peashooters’ defense and harm Mikael. In other words, the minimum value of $t$ for which the bad guys can pass through the lawn.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "5\n3 5 7 9 11",
+      "output": "4"
+    },
+    {
+      "input": "5\n7 7 7 7 7",
+      "output": "8"
+    },
+    {
+      "input": "1\n1",
+      "output": "2"
+    }
+  ],
+  "metadata": {
+    "languages": [
+      "en",
+      "sv"
+    ],
+    "difficulty": [
+      1.3,
+      1.6
+    ],
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

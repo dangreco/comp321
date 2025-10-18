@@ -1,0 +1,21 @@
+{
+  "id": "hello",
+  "name": "Hello World!",
+  "description": "",
+  "input": "There is no input for this problem.",
+  "output": "Output should contain one line, containing the string “Hello World!”.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [],
+  "metadata": {
+    "languages": [],
+    "difficulty": 1.1,
+    "limits": {
+      "cpu": {
+        "secs": 5,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

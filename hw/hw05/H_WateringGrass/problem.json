@@ -1,0 +1,26 @@
+{
+  "id": "grass",
+  "name": "Watering Grass",
+  "description": "$n$ sprinklers are installed in a horizontal strip of grass $l$ meters long and $w$ meters wide. Each sprinkler is installed at the horizontal center line of the strip. For each sprinkler we are given its position as the distance from the left end of the center line and its radius of operation.\n\nWhat is the minimum number of sprinklers to turn on in order to water the entire strip of grass?",
+  "input": "Input consists of at most $35$ cases. The first line for each case contains integer numbers $n$, $l$ and $w$ with $1 \\le n \\le 10\\, 000$, $1 \\le l \\le 10^7$, and $1 \\le w \\le 100$. The next $n$ lines contain two integers giving the position $x$ ($0 \\le x \\le l$) and radius of operation $r$ ($1 \\le r \\le 1\\, 000$) of a sprinkler.\n\nThe picture above illustrates the first case from the sample input.",
+  "output": "For each test case output the minimum number of sprinklers needed to water the entire strip of grass. If it is impossible to water the entire strip output $-1$.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "8 20 2\n5 3\n4 1\n1 2\n7 2\n10 2\n13 3\n16 2\n19 4\n3 10 1\n3 5\n9 3\n6 1\n3 10 1\n5 3\n1 1\n9 1",
+      "output": "6\n2\n-1"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 3.9,
+    "limits": {
+      "cpu": {
+        "secs": 2,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

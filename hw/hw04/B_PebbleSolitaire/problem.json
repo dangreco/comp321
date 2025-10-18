@@ -1,0 +1,26 @@
+{
+  "id": "pebblesolitaire2",
+  "name": "Pebble Solitaire",
+  "description": "I bet you have seen a pebble solitaire game. You know the game where you are given a board with an arrangment of small cavities, initially all but one occupied by a pebble each. The aim of the game is to remove as many pebbles as possible from the board. Pebbles disappear from the board as a result of a move. A move is possible if there is a straight line of three adjacent cavities, let us call them $A$, $B$, and $C$, with $B$ in the middle, where $A$ is vacant, but $B$ and $C$ each contain a pebble. The move consists of moving the pebble from $C$ to $A$, and removing the pebble in $B$ from the board. You may continue to make moves until no more moves are possible.\n\nIn this problem, we look at a simple variant of this game, namely a board with 23 cavities located along a line. In the beginning of each game, some of the cavities are occupied by pebbles. Your mission is to find a sequence of moves such that as few pebbles as possible are left on the board.",
+  "input": "The input begins with a positive integer $n \\le 10$ on a line of its own. Thereafter $n$ different games follow. Each game consists of one line of input with exactly 23 characters, describing the 23 cavities of the board in order. Each character is either ‘-’ or ‘o’. A ‘-’ character denotes an empty cavity, whereas an ‘o’ character denotes a cavity with a pebble in it. There is at least one pebble in all games.",
+  "output": "For each of the $n$ games in the input, output the minimum number of pebbles left on the board possible to obtain as a result of moves, on a line of its own.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "5\n---oo----------oo------\n-o--o-oo-----o--o-oo---\n-o----ooo----o----ooo--\nooooooooooooooooooooooo\noooooooooo-ooooooooooo-",
+      "output": "2\n4\n6\n23\n4"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 2.3,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

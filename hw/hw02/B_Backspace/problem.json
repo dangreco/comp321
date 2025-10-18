@@ -1,0 +1,61 @@
+{
+  "id": "backspace",
+  "name": "Backspace",
+  "description": "Right before Forritunarkeppni Framhaldsskólanna started, Bjarki decided to update his computer. He didn’t notice anything off until he started writing code in his favourite editor Bim (Bjarki IMproved). Usually when he uses this editor and presses backspace one letter to the left of the cursor is erased. But after the update it instead writes the letter &lt;. He has tried all of his editors, Bmacs, Neobim, bjedit, NoteBjad++, Subjark Text, but they all seem to have this same issue. He doesn’t have the time to scour the internet to find a solution to this problem, so he decides to take matters into his own hands and just solve this.\n\nHelp Bjarki write a program that takes as input a string he wrote and prints the string as he intended to write it.",
+  "input": "The first and only line of input contains a string $S$ of length $N$ containing only lower case English letters and the symbol &lt;.",
+  "output": "Print the string as Bjarki intended to write it. That is to say, if the string is printed letter by letter, &lt; denotes the removal of the last printed letter as if it were a backspace.",
+  "bounds": [],
+  "scoring": [
+    {
+      "group": 1,
+      "points": 10,
+      "constraints": "$ 1 \\le N \\le 100$, The string $S$ only contains the letter a and the symbol &lt;"
+    },
+    {
+      "group": 2,
+      "points": 10,
+      "constraints": "$ 1 \\le N \\le 100$, The string $S$ does not contain two consecutive &lt;"
+    },
+    {
+      "group": 3,
+      "points": 40,
+      "constraints": "$ 1 \\le N \\le 100$"
+    },
+    {
+      "group": 4,
+      "points": 40,
+      "constraints": "$ 1 \\le N \\le 10^6$"
+    }
+  ],
+  "samples": [
+    {
+      "input": "a&lt;bc&lt;",
+      "output": "b"
+    },
+    {
+      "input": "foss&lt;&lt;rritun",
+      "output": "forritun"
+    },
+    {
+      "input": "a&lt;a&lt;a&lt;aa&lt;&lt;",
+      "output": ""
+    }
+  ],
+  "metadata": {
+    "languages": [
+      "en",
+      "is"
+    ],
+    "difficulty": [
+      1.1,
+      1.5
+    ],
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

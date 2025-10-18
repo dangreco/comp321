@@ -1,0 +1,26 @@
+{
+  "id": "closestsums",
+  "name": "Closest Sums",
+  "description": "Given is a set of integers and then a sequence of queries. A query gives you a number and asks to find a sum of two distinct numbers from the set which is closest to the query number.",
+  "input": "Input contains multiple cases. Each case starts with an integer $1 &lt; n \\le 1000$. The following $n$ lines contain distinct integer numbers. The next line contains a positive integer $m$ giving the number of queries, $0 &lt; m &lt; 25$. The next $m$ lines contain an integer of the query, one per line. All the $n+m$ integers are between $-10^7$ and $10^7$, inclusive.",
+  "output": "Output should be organized as in the sample below. For each query output one line giving the query value and the closest sum in the format as in the sample.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "5\n3\n12\n17\n33\n34\n3\n1\n51\n30\n3\n1\n2\n3\n3\n1\n2\n3\n3\n1\n2\n3\n3\n4\n5\n6",
+      "output": "Case 1:\nClosest sum to 1 is 15.\nClosest sum to 51 is 51.\nClosest sum to 30 is 29.\nCase 2:\nClosest sum to 1 is 3.\nClosest sum to 2 is 3.\nClosest sum to 3 is 3.\nCase 3:\nClosest sum to 4 is 4.\nClosest sum to 5 is 5.\nClosest sum to 6 is 5."
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 2.4,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

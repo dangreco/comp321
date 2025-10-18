@@ -1,0 +1,70 @@
+python := `which python`
+gcc := `which gcc`
+ghc := `which ghc`
+
+[private]
+default:
+    @just --list
+
+@run:
+    just run-py
+
+test:
+    #!/usr/bin/env bash
+    set -euo pipefail
+
+    for input_file in tests/*.in; do
+        # Extract the base name (e.g., "1" from "1.in")
+        base_name=$(basename "$input_file" .in)
+        output_file="tests/${base_name}.out"
+
+        # Check if corresponding .out file exists
+        if [ ! -f "$output_file" ]; then
+            echo "Warning: No output file for $base_name"
+            continue
+        fi
+
+        # Run the program with input and capture output
+        actual_output=$(just run < "$input_file")
+        expected_output=$(cat "$output_file")
+
+        # Compare outputs
+        if [ "$actual_output" = "$expected_output" ]; then
+            echo "✓ Test $base_name passed"
+        else
+            echo "✗ Test $base_name failed"
+            echo "Expected:"
+            echo "$expected_output"
+            echo "Got:"
+            echo "$actual_output"
+            exit 1
+        fi
+    done
+
+[private]
+run-py:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    {{python}} solution.py
+
+[private]
+run-c:
+    #!/usr/bin/env bash
+    set -euo pipefail
+
+    tmp=$(mktemp -d)
+    trap "rm -rf $tmp" EXIT SIGINT SIGTERM
+
+    {{gcc}} -g -O2 -o "$tmp/solution" -std=gnu23 solution.c -lm
+    "$tmp/solution"
+
+[private]
+run-hs:
+    #!/usr/bin/env bash
+    set -euo pipefail
+
+    tmp=$(mktemp -d)
+    trap "rm -rf $tmp" EXIT SIGINT SIGTERM
+
+    {{ghc}} -O2 -ferror-spans -threaded -rtsopts -o "$tmp/solution" solution.hs
+    "$tmp/solution"

@@ -1,0 +1,30 @@
+{
+  "id": "simpleaddition",
+  "name": "Simple Addition",
+  "description": "Yup, yet another trivial problem. You just have to add two integers! Oh, not easy enough? Sure, let’s say that they’re positive as well. Now it should be trivial, right?",
+  "input": "The input consists of two lines, each containing a positive integer less than $10^{10\\, 000}$. Oh right…I forgot to mention that the integers can be quite large.",
+  "output": "One line containing the sum of the two integers.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "1337\n42",
+      "output": "1379"
+    },
+    {
+      "input": "1\n9999999999999",
+      "output": "10000000000000"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 3.1,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

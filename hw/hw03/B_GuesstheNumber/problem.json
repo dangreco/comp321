@@ -1,0 +1,21 @@
+{
+  "id": "guess",
+  "name": "Guess the Number",
+  "description": "I am thinking of a number between $1$ and $1000$, can you guess what number it is? Given a guess, I will tell you whether the guess is too low, too high, or correct. But I will only give you $10$ guesses, so use them wisely!",
+  "input": "Your program should output guesses for the correct number, in the form of an integer between $1$ and $1000$ on a line on its own. After making each guess, you need to make sure to flush standard out.\n\nAfter each guess, there will be a response to be read from standard in. This response is a line with one of the following three words:\n\nAfter having guessed the right answer your program should exit. If you guess incorrectly $10$ times, you won’t get any more chances and your program will be terminated.",
+  "output": "",
+  "bounds": [],
+  "scoring": [],
+  "samples": [],
+  "metadata": {
+    "languages": [],
+    "difficulty": 2.5,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

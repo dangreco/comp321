@@ -1,0 +1,30 @@
+{
+  "id": "pikemaneasy",
+  "name": "A Vicious Pikeman (Easy)",
+  "description": "Note that this is an easier version of the problem pikemanhard.\n\nOne of the reasons for this somewhat peculiar theory was the finding of ancient pike, a combat spear. Scientists have found many of these throughout the years. They come with a special symbol carved into them, usually the symbol of the tribe. This one didn’t have a symbol carved into it, it had pseudo code for Fenwick trees, as well as a config file for some kind of editor. Scientists are unsure which editor it might have been, but they believe it was some version of the closed Emacs beta.\n\nInstead of looking for more evidence, the archeologists started speculating what strategy the pikemen used in these programming contests. They must have been well prepared, since this guy had algorithms carved into his spear. The contest rules were probably as follows: When submiting a solution to the judge, the time in minutes from contest start was added to a penalty counter. So in order to plan his problem solving, a pikeman must have been good at approximating the number of minutes required to solve each problem.\n\nYou are given a number of problems which were designed for a contest in which the pikeman participated. For each problem, you are given the estimated time in minutes for solving the problem. Calculate the maximum number of problems a pikeman can solve in the contest, and the minimum penalty he can get, under the assumptions that these estimations are correct. You may assume that the pikemen are very efficient: submissions are always correct, and after submitting a problem they start solving the next problem immediately.",
+  "input": "Input starts with two integers on a single line $1 \\le N \\le 10^4$ and $1 \\le T \\le 10^{9}$, the number of problems in the ancient contest and the total length of the contest in minutes. Then follows a line with four integers $1 \\le A, B, C, t_0 \\le 10^6$, where $t_0$ $(t_0\\leq C)$ specifies the time in minutes required for solving the first problem, and the rest of the times $t_1, \\dots, t_{N-1}$ are given by:",
+  "output": "Output should consist of two integers: the maximum number of problems a pikeman can solve within the time limit, and the total penalty he will get for solving them. As the penalty might be huge, print it modulo $1\\, 000\\, 000\\, 007$. Print them on the same line, separated by a single space.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "1 3\n2 2 2 1",
+      "output": "1 1"
+    },
+    {
+      "input": "2 10\n2 2 2 2",
+      "output": "2 4"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 2.8,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}

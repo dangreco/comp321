@@ -1,0 +1,34 @@
+{
+  "id": "narrowartgallery",
+  "name": "Narrow Art Gallery",
+  "description": "A long art gallery has $2N$ rooms. The gallery is laid out as $N$ rows of 2 rooms side-by-side. Doors connect all adjacent rooms (north-south and east-west, but not diagonally). The curator has been told that she must close off $k$ of the rooms because of staffing cuts. Visitors must be able to enter using at least one of the two rooms at one end of the gallery, proceed through the gallery, and exit from at least one of the two rooms at the other end. Therefore, the curator must not close off any two rooms that would block passage through the gallery. That is, the curator may not block off two rooms in the same row or two rooms in adjacent rows that touch diagonally. Furthermore, she has determined how much value each room has to the general public, and now she wants to close off those $k$ rooms that leave the most value available to the public, without blocking passage through the gallery.",
+  "input": "Input will consist of multiple problem instances (galleries). Each problem instance will begin with a line containing two integers $N$ and $k$, where $3 \\leq N \\leq 200$ gives the number of rows, and $0 \\leq k \\leq N$ gives the number of rooms that must be closed off. This is followed by $N$ rows of two integers, giving the values of the two rooms in that row. Each room’s value $v$ satisfies $0 \\leq v \\leq 100$. A line containing $0~ 0$ will follow the last gallery.",
+  "output": "For each gallery, output the amount of value that the general public may optimally receive, one line per gallery.",
+  "bounds": [],
+  "scoring": [],
+  "samples": [
+    {
+      "input": "6 4\n3 1\n2 1\n1 2\n1 3\n3 3\n0 0\n0 0",
+      "output": "17"
+    },
+    {
+      "input": "4 3\n3 4\n1 1\n1 1\n5 6\n0 0",
+      "output": "17"
+    },
+    {
+      "input": "10 5\n7 8\n4 9\n3 7\n5 9\n7 2\n10 3\n0 10\n3 2\n6 3\n7 9\n0 0",
+      "output": "102"
+    }
+  ],
+  "metadata": {
+    "languages": [],
+    "difficulty": 2.7,
+    "limits": {
+      "cpu": {
+        "secs": 1,
+        "nanos": 0
+      },
+      "memory": 1024000000
+    }
+  }
+}
